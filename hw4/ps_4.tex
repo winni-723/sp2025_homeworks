@@ -1,0 +1,48 @@
+\documentclass[10pt]{article}
+\usepackage{amsmath, amssymb}
+
+\begin{document}
+
+\begin{center}
+    \LARGE {Problem Set 4 - Gradients and Backpropagation} \\[1em]
+    \Large{DS542 - DL4DS} \\[0.5em]
+    \large Spring, 2025
+\end{center}
+
+\vspace{2em}
+
+\noindent\textbf{Note:} Refer to Chapter 7 in \textit{Understanding Deep Learning}.
+
+\vspace{2em}
+
+\section*{Problem 4.1 (3 points)}
+
+Consider the case where we use the logistic sigmoid function as an activation function, defined as:
+
+\begin{equation}
+h = \sigma(z) = \frac{1}{1 + e^{-z}}.
+\end{equation}
+
+\noindent Compute the derivative \( \frac{\partial h}{\partial z} \). What happens
+to the derivative when the input takes (i) a large positive value and (ii) a large negative value?
+
+\vspace{5em}
+
+\section*{Problem 4.2 (3 points)}
+
+Calculate the derivative \( \frac{\partial \ell_i}{\partial f[x_i, \phi]} \) for the binary 
+classification loss function:
+
+\begin{equation}
+\ell_i = -(1 - y_i) \log [1 - \sigma(f[x_i, \phi])] - y_i \log [\sigma(f[x_i, \phi])],
+\end{equation}
+
+where the function \( \sigma(\cdot) \) is the logistic sigmoid, defined as:
+
+\begin{equation}
+\sigma(z) = \frac{1}{1 + \exp(-z)}.
+\end{equation}
+
+\vspace{5em}
+
+\end{document}
